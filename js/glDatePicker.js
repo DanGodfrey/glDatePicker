@@ -283,7 +283,7 @@
 						"<tr class='**-dow'>"+ /* Day of Week */
 							"<td>Sun</td><td>Mon</td><td>Tue</td><td>Wed</td><td>Thu</td><td>Fri</td><td>Sat</td>"+
 						"</tr>"+days+
-					"</table>"+
+					"</table><div class='paper-stack1'></div><div class='paper-stack2'></div>"+
 				"</div>";
 
 			// Replace css, month-year title

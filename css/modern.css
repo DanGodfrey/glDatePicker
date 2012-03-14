@@ -1,0 +1,170 @@
+/*
+	glDatePicker style inspired by the calendar app in FireFly 3.0 rom
+
+	http://code.gautamlad.com/glDatePicker/
+	https://github.com/glad/glDatePicker/
+	http://forum.xda-developers.com/showthread.php?t=914284
+*/
+
+/* Calendar container div */
+.gldp-modern
+{
+	float:right;
+}
+
+.gldp-modern .paper-stack2{
+    height: 5px;
+    width: 200px;
+    margin-left: 10px;
+    background-color: white;
+    box-shadow: inset 0 6px 5px -4px #ccc;
+}
+
+.gldp-modern .paper-stack1{
+    height: 5px;
+    width: 210px;
+    margin-left: 5px;
+    background-color: white;
+    box-shadow: inset 0 6px 5px -4px #ccc;
+}
+
+/* Table style */
+.gldp-modern table
+{
+	border-collapse:inherit;
+}
+
+/* Default row height */
+.gldp-modern tr
+{
+	line-height:28px;
+}
+
+/* Default style of cell */
+.gldp-modern td
+{
+	margin:0;
+	padding:0;
+	width:33px;
+	text-align:center;
+}
+
+/* Previous and Next arrows */
+.gldp-modern-prevnext, .gldp-modern-monyear
+{
+	/* IE10 */ 
+    background-image: -ms-linear-gradient(top, #29ABE1 0%, #222222 200%);
+
+    /* Mozilla Firefox */ 
+    background-image: -moz-linear-gradient(top, #29ABE1 0%, #222222 200%);
+
+    /* Opera */ 
+    background-image: -o-linear-gradient(top, #29ABE1 0%, #222222 200%);
+
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #29ABE1), color-stop(2.00, #222222));
+
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-linear-gradient(top, #29ABE1 0%, #222222 200%);
+
+    /* Proposed W3C Markup */ 
+    background-image: linear-gradient(top, #29ABE1 0%, #222222 200%);
+	color:#222;
+	font-size:15px;
+}
+
+.gldp-modern-prevnext {
+    cursor:pointer;
+}
+
+/* Days of the week (Sun, Mon, ...) */
+.gldp-modern-dow
+{
+	background-color:#FFF;
+	color:#ddd;
+	font-size:0.8em;
+	background-image: url(/images/calendar_tear.png);
+    background-repeat: no-repeat;
+}
+
+/* Selectable days */
+.gldp-modern-day, .gldp-modern-sat, .gldp-modern-sun 
+{
+	background-color:#fff;
+	color:#222;
+	border:solid 1px #ccc;
+}
+.gldp-modern-day-hover, .gldp-modern-sat-hover, .gldp-modern-sun-hover 
+{
+    /* IE10 */ 
+    background-image: -ms-linear-gradient(top, #29ABE1 0%, #222222 200%);
+
+    /* Mozilla Firefox */ 
+    background-image: -moz-linear-gradient(top, #29ABE1 0%, #222222 200%);
+
+    /* Opera */ 
+    background-image: -o-linear-gradient(top, #29ABE1 0%, #222222 200%);
+
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #29ABE1), color-stop(2.00, #222222));
+
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-linear-gradient(top, #29ABE1 0%, #222222 200%);
+
+    /* Proposed W3C Markup */ 
+    background-image: linear-gradient(top, #29ABE1 0%, #222222 200%);
+	color:#fff;
+	border:solid 1px #00afff;
+	cursor:pointer;
+}
+
+/* Selected days */
+.gldp-modern-selected
+{
+	/* IE10 */ 
+    background-image: -ms-linear-gradient(top, #29ABE1 0%, #222222 200%);
+
+    /* Mozilla Firefox */ 
+    background-image: -moz-linear-gradient(top, #29ABE1 0%, #222222 200%);
+
+    /* Opera */ 
+    background-image: -o-linear-gradient(top, #29ABE1 0%, #222222 200%);
+
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #29ABE1), color-stop(2.00, #222222));
+
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-linear-gradient(top, #29ABE1 0%, #222222 200%);
+
+    /* Proposed W3C Markup */ 
+    background-image: linear-gradient(top, #29ABE1 0%, #222222 200%);
+	color:#fff;
+	border:solid 1px #008faf;
+	cursor:default;
+}
+
+/* Today */
+.gldp-modern-today
+{
+	background-color:#FFF;
+	color:#222;
+	border:solid 1px #000;
+}
+.gldp-modern-today-hover
+{
+	background-color:#fff;
+	color:#00afff;
+	border:solid 1px #00afff;
+	cursor:pointer;
+}
+
+
+
+/* Non-selectable day.  Includes: previous/next month days and days that fall in the allowOld and endDate conditions */
+.gldp-modern-noday
+{
+	background-color:#fff;
+	color:#666;
+	font-weight:normal;
+	cursor:default;
+}
