@@ -1,8 +1,8 @@
 This fork adds some modern style to the glDatePicker. 
 
--Markup bellow the calendar to add depth, creating the appearance of a stacked calendar
--Serrated line added above the days of the week to create the appearance of a ripped calendar page
--Gradient colors added for header and selected date
+- Markup bellow the calendar to add depth, creating the appearance of a stacked calendar
+- Serrated line added above the days of the week to create the appearance of a ripped calendar page
+- Gradient colors added for header and selected date
 
 ### Usage
 
